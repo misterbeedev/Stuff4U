@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { inject } from "@vercel/analytics";
 
 import App from "./App";
 
@@ -11,3 +12,5 @@ root.render(
     <App />
   </StrictMode>
 );
+
+inject();
